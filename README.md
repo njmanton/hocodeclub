@@ -4,4 +4,5 @@ Some simple scripts for use in ho code club tutorials
 * martingale.py - simulates the Martingale betting strategy (double-down on each loss)
 * charts/uktop40.py - example script to scrape data from UK official charts
 * charts/billboard.py - same script adapted for US billboard charts
+* tube.py - a classic old riddle is 'how many tube stations contain none of letters of 'mackerel'?'. (http://www.robeastaway.com/blog/mackerel). this script allows you to test other phrases
 
