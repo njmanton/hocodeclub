@@ -5,7 +5,7 @@
 import random
 
 trials = 1000 # number of hands to play
-odds = 0.48 # chance of winning a hand
+odds = 0.474 # chance of winning a hand (0.474 is the probability of choosing red/black in roulette)
 payout = 2 # payout
 stake = 1 # initial stake
 prev = None # what was the previous bet
