@@ -5,7 +5,7 @@ import random, sys
 wins = 0  # number of wins
 losses = 0 # number of losses
 
-# get choice of switch from command line. argv[0] is always filename
+# get choice of switch from command line if present, otherwise 1 (switch). argv[0] is always filename
 switch = int(sys.argv[1]) if len(sys.argv) >= 2 else 1
 
 # get number of trials from command line if present, otherwise 1M
@@ -29,10 +29,9 @@ for _ in range(trials):
 	if switch == 1:
 		# if the strategy is to switch:
 		# pick the door which isn't the original pick (1) and not the opened door
-		# 
 		picked = 5 - opened
-
-	#print (prize, picked, opened, prize == picked)
+		# this calculation works because if opened is 3, we want door 2, and vice-versa
+		# so 5 - opened will give the right result either way
 
 	if picked == prize:
 		# win
