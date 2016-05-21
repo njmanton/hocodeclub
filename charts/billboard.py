@@ -15,9 +15,6 @@ def extractWoC(date):
   '''
   Given a date string,
   Scrape the top 40 WoC figures and aggregate them
-
-  the chart data is in the main table on the page,
-  the individual tracks are in the <tr> _without_ a class attribute
   '''
   url = baseUrl + date
   page = requests.get(url)
